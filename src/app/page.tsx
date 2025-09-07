@@ -7,7 +7,6 @@ import Link from "next/link";
 
 export default function Home() {
   const MotionLink = motion(Link);
-  
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center">

@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 
-// Assume MotionLink is imported or defined elsewhere
-const MotionLink = motion.a; // Placeholder for your component
+const MotionLink = motion.a;
+
 type ProjectCardProps = {
   title: string;
   desc: string;
-  tech: string[]; // <-- allow array of strings
+  tech: string[];
 };
 const ProjectCard = ({ title, desc, tech = [] }: ProjectCardProps) => {
-  // Add a return statement, which was missing in your original code
   return (
     <motion.div
       whileHover={{ scale: 1.05, y: -5 }}
@@ -21,11 +20,10 @@ const ProjectCard = ({ title, desc, tech = [] }: ProjectCardProps) => {
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
         <p className="text-white/80 mb-4">{desc}</p>
         
-        {/* Map over the tech array to dynamically create tags */}
         <div className="flex flex-wrap gap-2 mb-4">
           {tech.map((techName) => (
             <span
-              key={techName} // Use the tech name as a unique key
+              key={techName}
               className="bg-blue-600/20 text-blue-400 text-xs font-medium px-2 py-1 rounded"
             >
               {techName}

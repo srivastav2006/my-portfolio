@@ -7,21 +7,18 @@ const projects = [
     description:
       "JWT-authenticated article and comments service. 10+ REST endpoints, role-based access, nested comments with indexes, pagination and filtering.",
     link: "https://github.com/srivastav2006/ArticleHub",
-    color: "text-blue-300",
   },
   {
     title: "React Chat App",
     description:
       "Firebase Google OAuth, realtime messaging with Firestore listeners, presence indicators, and cloud storage integration.",
     link: "https://github.com/srivastav2006/react-chat-app",
-    color: "text-blue-400",
   },
   {
     title: "SPASS – SecurePass Extension",
     description:
       "Chrome extension with AES-based encryption, cross-device sync, and autofill for 50+ sites. Lightweight UI and <1s startup.",
     link: "https://github.com/srivastav2006/SPASS",
-    color: "text-blue-500",
   },
 ];
 
@@ -62,7 +59,7 @@ export default function ProjectPage() {
               transition={{ duration: 0.5, delay: idx * 0.08 }}
               className="group rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-7 hover:border-blue-400/40 hover:bg-white/10 transition shadow-lg"
             >
-              <h3 className={`text-2xl font-bold ${project.color}`}>{project.title}</h3>
+              <h3 className="text-2xl font-bold text-blue-400">{project.title}</h3>
               <p className="mt-3 text-neutral-300 leading-relaxed">
                 {project.description}
               </p>

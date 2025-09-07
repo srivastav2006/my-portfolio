@@ -5,9 +5,8 @@ type TechStackIconProps = {
   src: string;
   alt: string;
   name: string;
+};
 
-}
-// components/TechStackIcon.tsx
 const TechStackIcon = ({ src, alt, name }: TechStackIconProps) => (
   <motion.div
     whileHover={{ y: 2, scale: 0.9 }}

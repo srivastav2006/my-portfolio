@@ -16,16 +16,15 @@ export const Footer = () => (
             <Download size={14} /> Resume
           </a>
           <a
-            href="https://www.linkedin.com/in/srivastav3/" // change to your actual LinkedIn
+            href="https://www.linkedin.com/in/srivastav3/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 border border-blue-500 hover:bg-blue-500 hover:text-white rounded-xl px-4 py-1.5 transition text-xs"
           >
-            
             LinkedIn
           </a>
           <a
-            href="https://github.com/srivastav2006" // change to your actual GitHub
+            href="https://github.com/srivastav2006"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 border border-blue-500 hover:bg-blue-500 hover:text-white rounded-xl px-4 py-1.5 transition text-xs"
@@ -36,4 +35,3 @@ export const Footer = () => (
       </div>
     </footer>
   );
-  

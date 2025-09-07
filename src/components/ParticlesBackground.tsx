@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState, useCallback } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { Container, Engine, ISourceOptions } from "@tsparticles/engine";
+import { Engine, ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
 export const ParticlesBackground = () => {
@@ -11,14 +11,6 @@ export const ParticlesBackground = () => {
       await loadSlim(engine);
     }).then(() => setInit(true));
   }, []);
-
-  const particlesLoaded = useCallback(
-    async (container?: Container): Promise<void> => {
-      if (!container) return;
-      console.log(container);
-    },
-    []
-  );
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -105,7 +97,6 @@ export const ParticlesBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      particlesLoaded={particlesLoaded}
       options={options}
     />
   );

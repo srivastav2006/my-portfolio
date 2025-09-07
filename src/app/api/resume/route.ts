@@ -15,7 +15,7 @@ export async function GET() {
         "Cache-Control": "public, max-age=3600, immutable",
       }),
     });
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: "Resume not found" }, { status: 404 });
   }
 }
