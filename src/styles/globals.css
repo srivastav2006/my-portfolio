@@ -67,3 +67,66 @@ p {
   -webkit-mask-composite: destination-out;
   animation: borderAnimation 3s linear infinite;
 }
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-rainbow {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #f7b731, #5f27cd);
+  background-size: 400% 400%;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes colorShift {
+  0%, 100% { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  25% { 
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+  50% { 
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+  75% { 
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  }
+}
+
+.animate-colorShift {
+  animation: colorShift 10s ease infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.6), 0 0 60px rgba(236, 72, 153, 0.4);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(-5px) rotate(-1deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}

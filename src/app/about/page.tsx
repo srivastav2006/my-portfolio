@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen px-6 py-20 flex items-start justify-center">
+    <main className="min-h-screen px-6 py-20 flex items-start justify-center bg-gradient-to-br from-purple-900/20 via-blue-900/30 to-pink-900/20 animate-colorShift">
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -11,13 +11,13 @@ export default function AboutPage() {
         className="max-w-5xl w-full space-y-8"
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">
-          <span className=" bg-gradient-to-r from-blue-600 via-white/70 to-blue-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
             Srivastav in a Nutshell
           </span>
         </h2>
 
         {/* Bio */}
-        <div className="rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-8">
+        <div className="rounded-2xl backdrop-blur-xl bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-pink-500/10 border border-purple-400/30 p-6 md:p-8 animate-float">
           <p className="mb-4 text-lg text-muted-foreground">
             I&apos;m Chagapuram Srivastav, a backend-focused developer and competitive programmer, pursuing B.Tech in IT at IIIT Lucknow (CGPA 7.95). I enjoy building secure, scalable services and clean UIs.
           </p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </div>
 
         {/* Education */}
-        <div className="rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-8">
+        <div className="rounded-2xl backdrop-blur-xl bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-cyan-400/30 p-6 md:p-8 animate-float">
           <h3 className="text-2xl font-semibold mb-3">Education</h3>
           <ul className="space-y-2 text-muted-foreground">
             <li>
@@ -46,7 +46,7 @@ export default function AboutPage() {
         </div>
 
         {/* Achievements */}
-        <div className="rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-8">
+        <div className="rounded-2xl backdrop-blur-xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-blue-500/10 border border-emerald-400/30 p-6 md:p-8 animate-float">
           <h3 className="text-2xl font-semibold mb-3">Achievements</h3>
           <ul className="list-disc list-inside space-y-2 text-muted-foreground">
             <li>Global Rank 275 in CodeChef Starters 185 (Div 3)</li>

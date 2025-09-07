@@ -18,7 +18,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-center w-full min-h-screen py-50 bg-gradient-to-r from-black/10 via-zinc-900 to-blue-900/60"
+        className="text-center w-full min-h-screen py-50 bg-gradient-to-br from-purple-900/20 via-blue-900/30 to-pink-900/20 animate-colorShift"
       >
         <div className="mx-auto max-w-5xl px-4">
           <motion.h1
@@ -33,7 +33,7 @@ export default function Home() {
             }}
           >
             Chagapuram Srivastav <br />
-            <span className="bg-gradient-to-r from-blue-500 to-zinc-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-rainbow">
               Backend Developer • React • Competitive Programmer
             </span>
           </motion.h1>
@@ -41,7 +41,7 @@ export default function Home() {
             B.Tech IT @ IIIT Lucknow (CGPA 7.95). I build secure, well-tested backends with Node.js, Express, MongoDB (JWT/OAuth, pagination, indexing) and ship responsive UIs with React & Tailwind. Projects: ArticleHub (backend APIs), React Chat App (realtime), SPASS (Chrome extension).
           </p>
 
-          <p className="mt-4 text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-zinc-500 bg-clip-text text-transparent">
+          <p className="mt-4 text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-pulse">
             Code. Optimize. Ship.
           </p>
           <div className="mt-8 flex justify-center gap-4">
@@ -49,7 +49,7 @@ export default function Home() {
               href="/projects"
               whileTap={{ scale: 0.95 }}
               whileHover={{ scale: 1.05 }}
-              className="relative bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold text-xl rounded-2xl px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out overflow-hidden"
+              className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 text-white font-bold text-xl rounded-2xl px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out overflow-hidden animate-glow"
             >
               <span className="relative z-10">Explore My Work</span>
               <span className="absolute inset-0 rounded-2xl border-[3px] border-transparent pointer-events-none animate-borderMagic"></span>
@@ -66,9 +66,9 @@ export default function Home() {
         viewport={{ once: true }}
         className="mt-16 w-full px-4"
       >
-        <div className="mx-auto max-w-5xl rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-8 md:p-10">
+        <div className="mx-auto max-w-5xl rounded-2xl backdrop-blur-xl bg-gradient-to-br from-purple-500/10 via-blue-500/10 to-pink-500/10 border border-purple-400/30 p-8 md:p-10 animate-float">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">
-            <span className=" bg-gradient-to-r from-blue-600 via-white/70 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
@@ -80,7 +80,7 @@ export default function Home() {
             <MotionLink
               whileTap={{ scale: 0.9 }}
               href="/about"
-              className="inline-block bg-transparent border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-semibold text-sm rounded-xl px-5 py-2 transition"
+              className="inline-block bg-transparent border border-gradient-to-r from-purple-500 to-pink-500 text-purple-400 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white font-semibold text-sm rounded-xl px-5 py-2 transition-all duration-300"
             >
               More About Me
             </MotionLink>
@@ -96,9 +96,9 @@ export default function Home() {
         viewport={{ once: true }}
         className="mt-16 w-full px-4"
       >
-        <div className="mx-auto max-w-7xl rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-8 md:p-10">
+        <div className="mx-auto max-w-7xl rounded-2xl backdrop-blur-xl bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-cyan-400/30 p-8 md:p-10 animate-float">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-blue-600 via-white/70  to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
@@ -130,9 +130,9 @@ export default function Home() {
         viewport={{ once: true }}
         className="mt-16 mb-20 w-full px-4"
       >
-        <div className="mx-auto max-w-5xl rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-8 md:p-10">
+        <div className="mx-auto max-w-5xl rounded-2xl backdrop-blur-xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-blue-500/10 border border-emerald-400/30 p-8 md:p-10 animate-float">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-blue-600 via-white/70 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
               Tech Stack
             </span>
           </h2>

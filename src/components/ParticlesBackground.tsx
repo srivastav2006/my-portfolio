@@ -48,13 +48,13 @@ export const ParticlesBackground = () => {
       },
       particles: {
         color: {
-          value: "#3b82f6", // blue-500
+          value: ["#8b5cf6", "#ec4899", "#06b6d4", "#10b981", "#f59e0b"], // purple, pink, cyan, emerald, amber
         },
         links: {
-          color: "#3b82f6", // blue-500
+          color: ["#8b5cf6", "#ec4899", "#06b6d4", "#10b981"],
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.6,
           width: 1,
         },
         collisions: {
@@ -71,14 +71,14 @@ export const ParticlesBackground = () => {
           straight: false,
         },
         number: {
-          value: 50,
+          value: 60,
           density: {
             enable: true,
             width: 1000,
           },
         },
         opacity: {
-          value: 0.45,
+          value: 0.6,
         },
         shape: {
           type: "circle",
