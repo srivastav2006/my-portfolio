@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen px-6 py-20 flex items-start justify-center bg-gradient-to-br from-purple-900/20 via-blue-900/30 to-pink-900/20 animate-colorShift">
+    <main className="min-h-screen px-6 py-20 flex items-start justify-center">
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

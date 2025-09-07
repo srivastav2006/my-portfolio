@@ -24,7 +24,7 @@ const projects = [
 
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen px-6 py-20 flex items-start justify-center text-neutral-100 bg-gradient-to-br from-purple-900/80 via-blue-900/80 to-pink-900/80 animate-colorShift">
+    <main className="min-h-screen px-6 py-20 flex items-start justify-center text-neutral-100 bg-gradient-to-br from-black/70 via-zinc-800 to-blue-700">
       <motion.section
         initial="hidden"
         animate="visible"
@@ -57,13 +57,13 @@ export default function ProjectPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className="group rounded-2xl backdrop-blur-xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 border border-purple-400/30 p-6 md:p-7 hover:border-purple-400/60 hover:bg-gradient-to-br hover:from-purple-500/20 hover:via-pink-500/20 hover:to-blue-500/20 transition-all duration-300 shadow-lg hover:shadow-2xl animate-float"
+              className="group rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-7 hover:border-blue-400/40 hover:bg-white/10 transition shadow-lg"
             >
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">{project.title}</h3>
+              <h3 className="text-2xl font-bold text-blue-400">{project.title}</h3>
               <p className="mt-3 text-neutral-300 leading-relaxed">
                 {project.description}
               </p>
-              <div className="mt-5 inline-flex items-center gap-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:underline">
+              <div className="mt-5 inline-flex items-center gap-2 text-blue-400 group-hover:underline">
                 View on GitHub →
               </div>
             </motion.a>
