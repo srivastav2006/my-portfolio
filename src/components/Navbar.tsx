@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[94%] md:w-[92%] lg:w-[88%] z-50">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[94%] md:w-[92%] lg:w-[88%] z-50" role="navigation" aria-label="Main navigation">
       <div className="flex items-center justify-between px-5 py-3 rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
         {/* Logo / Name */}
         <Link href="/" className="text-base md:text-lg font-bold tracking-wide">
@@ -15,7 +15,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-2 font-medium">
+        <div className="hidden md:flex items-center gap-2 font-medium" role="menubar">
           <Link href="/projects" className="px-3 py-1.5 rounded-xl hover:bg-white/10 transition">
             Projects
           </Link>
@@ -70,7 +70,7 @@ export const Navbar = () => {
 
       {/* Mobile Drawer */}
       {openDrawer && (
-        <div className="mt-2 rounded-2xl backdrop-blur-xl bg-zinc-900/90 border border-white/10 shadow-2xl p-4 space-y-2 flex flex-col font-medium md:hidden">
+        <div className="mt-2 rounded-2xl backdrop-blur-xl bg-zinc-900/90 border border-white/10 shadow-2xl p-4 space-y-2 flex flex-col font-medium md:hidden" role="menu" aria-label="Mobile navigation menu">
           <Link
             href="/projects"
             onClick={() => setOpenDrawer(false)}

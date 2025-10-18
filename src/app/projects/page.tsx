@@ -3,22 +3,39 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "MindfulMate – AI Mental Health Companion",
+    description:
+      "AI-powered chatbot using GPT-4o and LangChain RAG with FastAPI backend, MongoDB, and Weaviate vector DB. Features journaling, meditation, mood tracking with 1,000+ interactions and 90% sentiment accuracy.",
+    link: "https://github.com/srivastav2006/MindfulMate",
+    tech: ["React", "TypeScript", "FastAPI", "MongoDB", "LangChain", "GPT-4o", "Weaviate"],
+  },
+  {
     title: "ArticleHub – Backend APIs",
     description:
-      "JWT-authenticated article and comments service. 10+ REST endpoints, role-based access, nested comments with indexes, pagination and filtering.",
+      "JWT-authenticated article and comments service. 10+ REST endpoints handling 5,000+ articles and 20,000+ comments with role-based access, indexing, pagination, and 30% improved query performance.",
     link: "https://github.com/srivastav2006/ArticleHub",
+    tech: ["Node.js", "Express.js", "MongoDB", "JWT", "BCrypt", "MVC"],
+  },
+  {
+    title: "Dockerized Packet Sniffer + Basic IDS",
+    description:
+      "Distributed intrusion detection system using Docker and Scapy with containerized sniffer nodes and centralized IDS collector for scalable network monitoring and security analysis.",
+    link: "https://github.com/srivastav2006/Dockerized-Packet-Sniffer",
+    tech: ["Docker", "Python", "Scapy", "Docker Compose", "Linux"],
   },
   {
     title: "React Chat App",
     description:
       "Firebase Google OAuth, realtime messaging with Firestore listeners, presence indicators, and cloud storage integration.",
     link: "https://github.com/srivastav2006/react-chat-app",
+    tech: ["React", "Firebase", "Tailwind CSS"],
   },
   {
     title: "SPASS – SecurePass Extension",
     description:
       "Chrome extension with AES-based encryption, cross-device sync, and autofill for 50+ sites. Lightweight UI and <1s startup.",
     link: "https://github.com/srivastav2006/SPASS",
+    tech: ["JavaScript", "Chrome APIs", "AES Encryption"],
   },
 ];
 
@@ -36,7 +53,7 @@ export default function ProjectPage() {
             transition: { staggerChildren: 0.15 },
           },
         }}
-        className="max-w-6xl w-full"
+        className="max-w-7xl w-full"
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -57,13 +74,23 @@ export default function ProjectPage() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className="group rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-7 hover:border-blue-400/40 hover:bg-white/10 transition shadow-lg"
+              className="group rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 p-6 md:p-7 hover:border-blue-400/40 hover:bg-white/10 transition shadow-lg flex flex-col"
             >
-              <h3 className="text-2xl font-bold text-blue-400">{project.title}</h3>
-              <p className="mt-3 text-neutral-300 leading-relaxed">
+              <h3 className="text-2xl font-bold text-blue-400 mb-3">{project.title}</h3>
+              <p className="mt-2 text-neutral-300 leading-relaxed mb-4 flex-grow">
                 {project.description}
               </p>
-              <div className="mt-5 inline-flex items-center gap-2 text-blue-400 group-hover:underline">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((techName) => (
+                  <span
+                    key={techName}
+                    className="bg-blue-600/20 text-blue-300 text-xs font-medium px-2 py-1 rounded"
+                  >
+                    {techName}
+                  </span>
+                ))}
+              </div>
+              <div className="inline-flex items-center gap-2 text-blue-400 group-hover:underline">
                 View on GitHub →
               </div>
             </motion.a>

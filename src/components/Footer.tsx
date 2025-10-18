@@ -1,7 +1,7 @@
 import { Download } from "lucide-react";
 
 export const Footer = () => (
-    <footer className="bg-gradient-to-r from-black via-zinc-900 to-blue-900 py-4 px-3 text-center text-sm text-white ">
+    <footer className="bg-gradient-to-r from-black via-zinc-900 to-blue-900 py-4 px-3 text-center text-sm text-white" role="contentinfo">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>&copy; {new Date().getFullYear()} Chagapuram Srivastav. All Rights Reserved.</p>
         

@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/next";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,7 +18,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chagapuram Srivastav | Portfolio",
   description:
-    "Backend-focused developer (Node.js, Express, MongoDB) with React experience. Competitive programmer and IIIT Lucknow undergrad.",
+    "Backend Engineer & AI/ML Developer. Specializing in Node.js, Express, FastAPI, MongoDB, React, and distributed systems. IIIT Lucknow undergrad (CGPA 8.35). CodeChef 4★, Codeforces Specialist.",
+  keywords: ["Backend Engineer", "AI/ML Developer", "Node.js", "Express", "FastAPI", "MongoDB", "React", "TypeScript", "Portfolio"],
+  authors: [{ name: "Chagapuram Srivastav" }],
+  openGraph: {
+    title: "Chagapuram Srivastav | Portfolio",
+    description: "Backend Engineer & AI/ML Developer. Specializing in Node.js, Express, FastAPI, MongoDB, React, and distributed systems.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
